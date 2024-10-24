@@ -1,0 +1,175 @@
+ion-content {
+    --ion-background-color: #ffffff; /* Color blanco */
+    --color: #000000;
+}
+
+ion-toolbar {
+  --background: #ffffff; /* Color blanco */
+  --color: #000000; /* Color del texto */
+  --ion-background-color: #ffffff; /* Color blanco */
+  --background-color: #ffffff;
+}
+
+.circle-button-blue {
+  color: white;
+  background-color: rgba(57, 89, 178, 0.9);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.circle-button-white {
+  color: black;
+  background-color: rgb(218, 224, 255);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.example-sidenav {
+  padding: 20px;
+
+}
+
+.drawer-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  flex: 1; /* Ocupa el espacio restante */
+  height: 100vh;
+}
+
+.scrollable-content {
+  overflow-y: auto;
+  flex: 1; /* Ocupa el espacio restante */
+}
+
+.additional-info {
+  font-size: 0.8em; /* Tamaño de letra más pequeño */
+  text-align: right; /* Alinear a la derecha */
+}
+
+.additional-info p {
+  margin: 0; /* Eliminar márgenes para que estén uno debajo del otro */
+}
+
+.description-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Ajusta la altura según sea necesario */
+}
+
+.circle-button-option {
+  margin-right: 5px;
+  width: 53px; 
+  height: 53px;
+}
+
+// Bolt
+
+.maintenance-item {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 20px;
+}
+
+.category {
+  font-size: 1.2rem;
+  color: #3f51b5;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.info p {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.label {
+  color: #666;
+}
+
+.actions {
+  flex: 1;
+  min-width: 250px;
+}
+
+.actions h3 {
+  font-size: 1.1rem;
+  color: #3f51b5;
+  margin-bottom: 10px;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.action-button {
+  background-color: transparent;
+  border: 2px solid #3f51b5;
+  color: #3f51b5;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.action-button:hover {
+  background-color: #3f51b5;
+  color: white;
+}
+
+.action-button .mat-icon {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+
+.button-label {
+  font-size: 0.7rem;
+  margin-top: 4px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .info, .actions {
+    width: 100%;
+  }
+
+  .button-group {
+    justify-content: center;
+  }
+}
