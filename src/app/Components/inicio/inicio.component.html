@@ -37,16 +37,7 @@
   
       <div class="card flex justify-content-center">
           <p class="text-center" >Mantenimientos Dia</p>
-          <button [matMenuTriggerFor]="menu" mat-mini-fab>
-              <mat-icon>menu</mat-icon>
-          </button>
-  
-          <mat-menu #menu="matMenu">
-            <button mat-menu-item (click)="exportChartAsImage('chartPieDay', 'png')" >Exportar Imagen</button>
-            <button mat-menu-item (click)="exportChartAsPDF('chartPieDay')">Exportar en PDF</button>
-            <button mat-menu-item (click)="exportChartDataAsExcel(configPieChartDay.datasets[0].data, 'chartPieDay')">Exportar en xlsx</button>
-            <button mat-menu-item (click)="exportChartDataAsCSV(configPieChartDay.datasets[0].data, 'chartPieDay')">Exportar en csv</button>
-          </mat-menu>
+          
   
           <p-chart id="chartPieDay" type="pie" [data]="configPieChartDay" [options]="optionsPieChart" />
           
